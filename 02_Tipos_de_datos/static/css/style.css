@@ -1,4 +1,23 @@
+*{
+    margin:0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: black;
+    font-family: Helvetica;
+}
+h1{
     color: white;
+}
+button{
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px #cfcfcf;
+    color: black;
+    font-size: 25px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }

@@ -1,16 +1,20 @@
-let colors = ["Rojo ","Verde ","Azul "]
-let usuario = {nombre:"Akon", correo:"akonbustamante@liceovvh.cl", edad:16}
-let esestudiante = true;
+let usuario = {
+    nombre:"Akon",
+    correo:"akonbustamante@liceovvh.cl",
+    edad:16,
+    colors:["Rojo ","Verde ","Azul "],
+    estudiante:true
+}
 
 function Colores(){
-    alert(colors);
+    alert(usuario.colors);
 }
 function Identidad(){
-    alert(JSON.stringify(usuario));
+    alert("Nombre: "+usuario.nombre+"\nCorreo: "+usuario.correo+"\nEdad: "+usuario.edad+" años.");
 }
 function Estudiante(){
-    alert(esestudiante);
+    alert(usuario.estudiante);
 }
 function Resumen(){
-    alert("Hola, Soy: "+usuario.nombre+", tengo: "+usuario.edad+", mi correo es: "+usuario.correo+" y soy estudiante: "+esestudiante+", mis colores favoritos son "+colors)
+    alert("Hola, Soy: "+usuario.nombre+", tengo: "+usuario.edad+", mi correo es: "+usuario.correo+" y soy estudiante: "+usuario.estudiante+", mis colores favoritos son "+usuario.colors)
 }
