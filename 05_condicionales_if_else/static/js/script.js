@@ -183,7 +183,16 @@ function Vali() {
 /*Verificar si un número es positivo o negativo
 Solicita un número. Muestra si es positivo, negativo o cero.*/
 function Veri() {
-    
+    let num = prompt("Dime un numero")
+        if(num>0){
+            alert(`Tu numero es Positivo : ${num}`)
+        }
+        else if(num==0){
+            alert(`Tu numero es Cero : ${num}`)
+        }
+        else{
+            alert(`Tu numero es Negativo : ${num}`)
+        }
 }
 /*Saludo personalizado según hora
 Pide la hora actual (en formato 24 horas).
@@ -217,17 +226,12 @@ Solicita una palabra.
 Verifica si contiene la letra "e" (minúscula).
 Si la tiene, muestra "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'".*/
 function Veri2() {
-    let letra = prompt("dime tu palabra")
-    let largo = letra.length
-    let conta = 0
-    while (conta > largo) {
-        if (correo[conta] == 'e') {
-            alert("Contiene la letra 'e'")
-        }
-        else {
-            alert("No contiene la letra 'e'")
-        }
-        conta += 1
+    let palabra = prompt("Dime una palabra");
+    if(palabra.includes("e")){
+        alert("Tu palabra contiene la letra 'e'")
+    }
+    else{
+        alert("Tu palabra no contiene la letra 'e'")
     }
 }
 

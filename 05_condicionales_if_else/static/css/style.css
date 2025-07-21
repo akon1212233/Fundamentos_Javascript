@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica;
+    background-color: #8f8f8f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container p{
+    text-decoration:underline;
+    color: #fff;
+    padding: 15px;
+}
+.container button{
+    box-shadow: 2px 2px 2px #747474;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+}
+h1{
+    color: #161616;
+    border-bottom: 5px solid black;
+    margin-top:15px ;
+    margin-bottom: 25px;
+}
