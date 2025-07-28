@@ -171,13 +171,11 @@ Verifica si el texto contiene el símbolo @.
 Si lo tiene, muestra "Correo válido", si no, "Correo inválido".*/
 function Vali() {
     let correo = prompt("dime tu correo")
-    let largo = correo.length
-    let cont = 0
-    while (cont > largo) {
-        if (correo[cont] == '@') {
-            alert("correo valido")
-        }
-        cont += 1
+    if(correo.includes("@")){
+        alert("Correo valido")
+    }
+    else{
+        alert("Correo invalido")
     }
 }
 /*Verificar si un número es positivo o negativo
