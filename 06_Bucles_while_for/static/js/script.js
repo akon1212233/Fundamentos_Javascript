@@ -3,9 +3,9 @@ function consola(text){
     consoler.value +=  text
     consoler.scrollTop = consoler.scrollHeight
 }
-function clear(){
-    consoler.value = "";
-}
+document.querySelector("#clean").addEventListener('click', function(){
+    consoler.value = " "
+})
 document.querySelector('.problema-1').addEventListener("click", function(){
     let n = parseInt(prompt("Dime un numero"))
     clear()
