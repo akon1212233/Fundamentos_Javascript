@@ -1,5 +1,6 @@
 const consoler = document.querySelector("#console-visual")
 function consola(text){
+    lol(consoler.value)
     consoler.value +=  text + "\n"
     consoler.scrollTop = consoler.scrollHeight
 }
@@ -8,10 +9,11 @@ function consolan(text){
     consoler.scrollTop = consoler.scrollHeight
 }
 document.querySelector("#clean").addEventListener('click', function(){
-    consoler.value = " "
+    consoler.value = ""
 })
-
-
+function lol(text){
+    console.log(text + "\n")
+}
 document.querySelector('.problema-5').addEventListener("click", function(){
     let num = parseInt(prompt("Dime un numero"))
     consola(`Tabla del ${num}`)
@@ -24,7 +26,7 @@ document.querySelector('.problema-6').addEventListener("click", function(){
     let num = parseInt(prompt("Dime un numero"))
     for(let i=1;i<=num;i++){
         if(i%2==0){
-            consolan(i + ", ")
+            consola(i + ", ")
         }
     }
 })
